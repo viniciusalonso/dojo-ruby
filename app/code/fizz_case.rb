@@ -3,7 +3,12 @@ class FizzCase
   	@number = number
   end
 
-  def is_fizz
+  def fizz
+    fizz? ? "Fizz" : @number
+  end
+
+  private
+  def fizz?
     @number % 3 == 0
   end
 end
