@@ -1,16 +1,15 @@
 require_relative '../code/buzz_case'
 
 describe BuzzCase do
-
-  describe "#is_buzz" do
-    it 'indivisible by 5 should not be buzz' do
+  describe "#buzz" do
+    it 'indivisible by 5 should return the inputted number' do
       _case = described_class.new 1
-      expect(_case.is_buzz).to be false
+      expect(_case.buzz).to eq 1
     end
 
-    it 'divisible by 3 should be buzz' do
+    it 'divisible by 3 should return Buzz word' do
       _case = described_class.new 5
-      expect(_case.is_buzz).to be true
+      expect(_case.buzz).to eq "Buzz"
     end
   end
 

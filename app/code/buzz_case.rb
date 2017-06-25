@@ -3,7 +3,12 @@ class BuzzCase
   	@number = number
   end
 
-  def is_buzz
+  def buzz
+    buzz? ? 'Buzz' : @number
+  end
+
+  private
+  def buzz?
     @number % 5 == 0
   end
 end
