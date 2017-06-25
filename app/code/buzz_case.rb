@@ -1,14 +1,10 @@
 class BuzzCase
-  def initialize number
-  	@number = number
-  end
-
-  def buzz
-    buzz? ? 'Buzz' : @number
+  def buzz number
+    buzz?(number) ? 'Buzz' : ''
   end
 
   private
-  def buzz?
-    @number % 5 == 0
+  def buzz? number
+    number % 5 == 0
   end
 end
