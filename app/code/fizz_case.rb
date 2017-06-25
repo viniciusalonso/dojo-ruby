@@ -1,14 +1,10 @@
 class FizzCase
-  def initialize number
-  	@number = number
-  end
-
-  def fizz
-    fizz? ? "Fizz" : @number
+  def fizz number
+    fizz?(number) ? "Fizz" : ''
   end
 
   private
-  def fizz?
-    @number % 3 == 0
+  def fizz? number
+    number % 3 == 0
   end
 end
