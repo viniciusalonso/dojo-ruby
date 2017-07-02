@@ -4,7 +4,7 @@ describe FizzCase do
   describe "#fizz" do
     subject { described_class.new }
 
-    it 'indivisible by 5 should return empty string' do
+    it 'indivisible by 3 should return empty string' do
       expect(subject.fizz(1)).to eq ''
     end
 

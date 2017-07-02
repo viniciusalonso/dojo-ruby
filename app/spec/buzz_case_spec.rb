@@ -8,7 +8,7 @@ describe BuzzCase do
       expect(subject.buzz(1)).to eq ''
     end
 
-    it 'divisible by 3 should return Buzz word' do
+    it 'divisible by 5 should return Buzz word' do
       expect(subject.buzz(5)).to eq "Buzz"
     end
   end
