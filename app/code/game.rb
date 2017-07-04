@@ -4,11 +4,8 @@ require_relative './buzz_case'
 
 class Game
   def initialize interval
-  	@interval = interval
-
-    fizz_case = FizzCase.new
-    buzz_case = BuzzCase.new
-    @response = Response.new fizz_case, buzz_case
+    @interval = interval
+    @response = Response.new(FizzCase.new, BuzzCase.new)
   end
 
   def play
